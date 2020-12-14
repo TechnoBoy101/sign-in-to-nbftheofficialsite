@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign-in</title>
+</head>
+<body>
+	<input type="Username" name="userName" id="userName" class="userName" placeholder="Username: ">
+	<p id="incorrect" style="display: none;">Incorrect Username</p>
+	<button onclick="signin()">Sign-in</button>
+</body>
+<script type="text/javascript">
+  function signin()
+  {
+    let username = document.getElementById('userName').value;
 
-You can use the [editor on GitHub](https://github.com/TechnoBoy101/sign-in-to-nbftheofficialsite/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TechnoBoy101/sign-in-to-nbftheofficialsite/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    if (username == '1000Infinity') 
+    	{
+    		window.location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2F1000infinity%2Fhome&sa=D&sntz=1&usg=AFQjCNGWpjMoec0IZzfKixHg3tPTwBnrLw");
+    	} 
+    else if (username == 'InvictusAbhi')
+    {
+    	window.location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Finvictusabhi%2Fhome&sa=D&sntz=1&usg=AFQjCNGPchy2hIB2IFKfwPbwyVZqmJdxVw");
+    }
+    else if (username == 'NBFMaster101')
+    {
+    	window.location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Fnbfmaster101%2Fhome&sa=D&sntz=1&usg=AFQjCNHp0u0QGDJ1fyx19C9V-fiGg_VxQw");
+    }
+    else if (username == 'InvictusSK')
+    {
+    	window.location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Finvictussk%2Fhome&sa=D&sntz=1&usg=AFQjCNFqGWMHX3zayHdOthIKd4Cq2DWM0Q");
+    }
+    else if (username == 'Avalanche0609')
+    {
+    	window.location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Favalanche0609%2Fhome&sa=D&sntz=1&usg=AFQjCNGLrKVuEe8Eleji6qc51pSwPOz4OA");
+    }
+    else
+    {
+    	document.getElementById('incorrect').style.display = 'block';
+    }
+  }
+</script>
+</html>
