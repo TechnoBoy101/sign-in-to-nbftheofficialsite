@@ -12,14 +12,22 @@
 	<div style="position: absolute; top: 285px; left: 525px;">
 		<p style="position: absolute; top: -70px; font-size: 25px;">Sign-in</p>
 		<input type="Username" name="userName" id="userName" class="userName" placeholder="Username: " style="height: 50px; width: 285px; opacity: 70%; border: none;"><br>
-        <input type="Password" name="password" id= "password" class="password" placeholder="Password: " style="margin-top: 10px; height: 50px; width: 285px; opacity: 70%; border: none;">
-            <button onclick="signin();" style="background-color: blue; color: white; border: none; height: 30px; width: 285px; position: absolute; top: 175px; left: 0px;">Sign-in</button>
-            <p style="color: white;" id="noid">
-                No account?
-                <a href="https://sites.google.com/view/nbf-the-official-site/sign-insign-up/sign-up" style="text-decoration: none; color: navy;" class="signup"> Create one!</a>
-            </p>
-            </div>  
-        </div>
+		<p style="color: white;" id="noid">
+			No account?
+			<a href="https://sites.google.com/view/nbf-the-official-site/sign-in" style="text-decoration: none; color: navy;" class="signup"> Create one!</a>
+		</p>
+		<div  style="display: none;" id="button2">
+			<input type="Password" name="password" id= "password" class="password" placeholder="Password: " style="height: 50px; width: 285px; opacity: 70%; border: none;">
+		<button onclick="signin();" style="background-color: blue; color: white; border: none; height: 30px; width: 100px; position: absolute; top: 100px; left: 200px;">Sign-in</button>
+		</div>
+
+		<div id="button3" style=" display: none;">
+			<button onclick="document.getElementById('button1').style.display='block'; document.getElementById('button2').style.display='none'; document.getElementById('userName').style.display='block'; document.getElementById('button3').style.display='none'; document.getElementById('noid').style.display='block';" style="background-color: grey; color: white; border: none; height: 30px; width: 100px; position: absolute; top: 100px;">Back</button>
+		</div>
+
+		<div id="button1">
+		<button onclick="next(); document.getElementById('button1').style.display='none'; document.getElementById('button3').style.display='block'; document.getElementById('noid').style.display='none';" style="background-color: blue; color: white; border: none; height: 30px; width: 285px; position: absolute; top: 110px;">Next</button>
+		</div>
 
 	</div>
 </body>
@@ -29,58 +37,60 @@
     let password = document.getElementById('password').value;
     let username = document.getElementById('userName').value;
 
-    document.getElementById('userName').value;
-    let username = document.getElementById('userName').value;
-  if (username == '1000Infinity')
-        {
-            location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2F1000infinity%2Fhome&sa=D&sntz=1&usg=AFQjCNGWpjMoec0IZzfKixHg3tPTwBnrLw");
-        }
-    else if (username == 'InvictusAbhi')
-    {
-        document.getElementById('userName').style.display='none'; document.getElementById('button2').style.display='block';
-    }
-    else if (username == 'NBFMaster101')
-    {
-        document.getElementById('userName').style.display='none'; document.getElementById('button2').style.display='block';
-    }
-    else if (username == 'InvictusSK')
-    {
-        location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Finvictussk%2Fhome&sa=D&sntz=1&usg=AFQjCNFqGWMHX3zayHdOthIKd4Cq2DWM0Q");
-    }
-    else if (username == 'Avalanche0609')
-    {
-        document.getElementById('userName').style.display='none'; document.getElementById('button2').style.display='block';
-    }
-    else if(username == '')
-    {
-        alert('Please enter an Username');
-        document.getElementById('userName').style.display='block';
-    }
-    else
-    {
-        alert('Incorrect Username')
-    }
-  }
-
     if(password == 'Abhi2010')
     {
-        location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Finvictusabhi%2Fhome&sa=D&sntz=1&usg=AFQjCNGPchy2hIB2IFKfwPbwyVZqmJdxVw");
+    	location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Finvictusabhi%2Fhome&sa=D&sntz=1&usg=AFQjCNGPchy2hIB2IFKfwPbwyVZqmJdxVw");
     }
     else if(password == 'dagger29')
     {
-        location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Fnbfmaster101%2Fhome&sa=D&sntz=1&usg=AFQjCNHp0u0QGDJ1fyx19C9V-fiGg_VxQw");
+    	location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Fnbfmaster101%2Fhome&sa=D&sntz=1&usg=AFQjCNHp0u0QGDJ1fyx19C9V-fiGg_VxQw");
     }
     else if(password == 'namangamez')
     {
-        location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Favalanche0609%2Fhome&sa=D&sntz=1&usg=AFQjCNGLrKVuEe8Eleji6qc51pSwPOz4OA");
+    	location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Favalanche0609%2Fhome&sa=D&sntz=1&usg=AFQjCNGLrKVuEe8Eleji6qc51pSwPOz4OA");
     }
     else if(password == '')
     {
-        alert('Please enter a password');
+    	alert('Please enter a password');
     }
     else
     {
-        alert('Incorrect Password');
+    	alert('Incorrect Password');
     }
+  }
+  function next()
+  {
+  	document.getElementById('userName').value;
+  	let username = document.getElementById('userName').value;
+  if (username == '1000Infinity')
+    	{
+    		location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2F1000infinity%2Fhome&sa=D&sntz=1&usg=AFQjCNGWpjMoec0IZzfKixHg3tPTwBnrLw");
+    	}
+    else if (username == 'InvictusAbhi')
+    {
+    	document.getElementById('userName').style.display='none'; document.getElementById('button2').style.display='block';
+    }
+    else if (username == 'NBFMaster101')
+    {
+    	document.getElementById('userName').style.display='none'; document.getElementById('button2').style.display='block';
+    }
+    else if (username == 'InvictusSK')
+    {
+    	location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Finvictussk%2Fhome&sa=D&sntz=1&usg=AFQjCNFqGWMHX3zayHdOthIKd4Cq2DWM0Q");
+    }
+    else if (username == 'Avalanche0609')
+    {
+    	document.getElementById('userName').style.display='none'; document.getElementById('button2').style.display='block';
+    }
+    else if(username == '')
+    {
+    	alert('Please enter an Username');
+    	document.getElementById('userName').style.display='block';
+    }
+    else
+    {
+    	alert('Incorrect Username')
+    }
+  }
 </script>
 </html>
