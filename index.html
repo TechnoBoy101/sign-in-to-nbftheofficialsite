@@ -49,7 +49,18 @@
     }
     else if (username == 'InvictusSK')
     {
-        location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Finvictussk%2Fhome&sa=D&sntz=1&usg=AFQjCNFqGWMHX3zayHdOthIKd4Cq2DWM0Q");
+        if(password == 'wordpass101')
+        {
+            location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Finvictussk%2Fhome&sa=D&sntz=1&usg=AFQjCNFqGWMHX3zayHdOthIKd4Cq2DWM0Q");
+        }
+        else if(password == '')
+        {
+            alert('Please Enter A Password')
+        }
+        else
+        {
+            alert('Incorrect Password')
+        }
     }
     else if (username == 'InvictusAbhi')
     {
