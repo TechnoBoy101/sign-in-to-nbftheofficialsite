@@ -6,7 +6,8 @@
 </head>
 <body>
     <div>
-        <img src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" style="opacity: 50%; height: 400px; position: absolute; top: 150px; left: 475px;">
+        <form onsubmit="return signin()">
+            <img src="https://mulder-onions.com/wp-content/uploads/2017/02/White-square.jpg" style="opacity: 50%; height: 400px; position: absolute; top: 150px; left: 475px;">
 
         <img src="https://github.com/TechnoBoy101/nbf-pic/blob/main/5.png?raw=true" style="position: absolute; top: 160px; left: 470px; height: 75px; width: 100px;">
 
@@ -16,20 +17,22 @@
 
             <p style="position: absolute; top: -70px; font-size: 25px;">Sign-in</p>
 
-            <input type="Username" name="userName" id="userName" class="userName" placeholder="Username: " style="height: 50px; width: 285px; opacity: 70%; border: none;"><br>
+            <input type="username" name="userName" id="userName" class="userName" placeholder="Username: " style="height: 50px; width: 285px; opacity: 70%; border: none;"><br>
 
             <div  id="button2" style="padding-top: 10px;">
 
                 <input type="Password" name="password" id= "password" class="password" placeholder="Password: " style="height: 50px; width: 285px; opacity: 70%; border: none;">
 
-                <button onclick="signin();" style="background-color: blue; color: white; border: none; height: 30px; width: 285px; position: absolute; top: 175px; left: 0px;">Sign-in</button>
+                <input type="submit" style="background-color: blue; color: white; border: none; height: 30px; width: 285px; position: absolute; top: 175px; left: 0px;" value="Login">
 
                 <p style="color: white;" id="noid">
                     No account?
-                    <a href="https://sites.google.com/view/nbf-the-official-site/sign-in" style="text-decoration: none; color: navy;" class="signup"> Create one!</a>
+                    <a href="https://sites.google.com/view/nbf-the-official-site/sign-insign-up/sign-up" style="text-decoration: none; color: navy;" class="signup"> Create one!</a>
                 </p>
 
             </div>
+        </form>
+        
 
         </div>
 
@@ -45,13 +48,27 @@
 
     if (username == '1000Infinity')
     {
-        location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2F1000infinity%2Fhome&sa=D&sntz=1&usg=AFQjCNGWpjMoec0IZzfKixHg3tPTwBnrLw");
+        if(password == '12321')
+        {
+            location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2F1000infinity%2Fhome&sa=D&sntz=1&usg=AFQjCNGWpjMoec0IZzfKixHg3tPTwBnrLw");
+            return false;
+        }
+        else if(password == '')
+        {
+            alert('Please Enter A Password')
+        }
+        else
+        {
+            alert('Incorrect Password')
+        }
+        
     }
     else if (username == 'InvictusSK')
     {
         if(password == 'wordpass101')
         {
             location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Finvictussk%2Fhome&sa=D&sntz=1&usg=AFQjCNFqGWMHX3zayHdOthIKd4Cq2DWM0Q");
+            return false;
         }
         else if(password == '')
         {
@@ -67,6 +84,7 @@
         if(password == 'Abhi2010')
         {
             location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Finvictusabhi%2Fhome&sa=D&sntz=1&usg=AFQjCNGPchy2hIB2IFKfwPbwyVZqmJdxVw");
+            return false;
         }
         else if(password == '')
         {
@@ -82,6 +100,7 @@
         if(password == 'RJSS0606')
         {
             location.replace("https://sites.google.com/view/nbfrianna/home");
+            return false;
         }
         else if(password == '')
         {
@@ -97,6 +116,7 @@
         if(password == 'RJSS0606')
         {
             location.replace("https://sites.google.com/view/rihaan/home");
+            return false;
         }
         else if(password == '')
         {
@@ -113,6 +133,7 @@
         if(password == 'dagger29')
         {
             location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Fnbfmaster101%2Fhome&sa=D&sntz=1&usg=AFQjCNHp0u0QGDJ1fyx19C9V-fiGg_VxQw");
+            return false;
         }
         else if(password == '')
         {
@@ -132,6 +153,7 @@
         if(password == 'namangamez')
         {
             location.replace("https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Favalanche0609%2Fhome&sa=D&sntz=1&usg=AFQjCNGLrKVuEe8Eleji6qc51pSwPOz4OA");
+            return false;
         }
         else if(password == '')
         {
